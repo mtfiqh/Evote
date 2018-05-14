@@ -37,24 +37,24 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                              <Component id="labelNama" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="labelNIM" max="32767" attributes="0"/>
-                                          </Group>
-                                          <Component id="labelVisiMisi" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="labelNama" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="labelNIM" max="32767" attributes="0"/>
                                       </Group>
-                                      <EmptySpace min="-2" pref="256" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="jButton1_Add" min="-2" pref="201" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="labelVisiMisi" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="jButton1_Add" min="-2" pref="201" max="-2" attributes="0"/>
-                                          <Component id="jButton3_Edit" min="-2" pref="201" max="-2" attributes="0"/>
+                                          <Component id="jButton3_Edit" alignment="1" min="-2" pref="201" max="-2" attributes="0"/>
+                                          <Component id="jButton5_Remove" min="-2" pref="201" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <Component id="jButton5_Remove" min="-2" pref="201" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Component id="jScrollPane1" alignment="0" min="-2" pref="608" max="-2" attributes="0"/>
-                          <Component id="jButton2_Vote" alignment="0" min="-2" pref="608" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
@@ -63,6 +63,10 @@
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="labelTimer" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jButton2_Vote" min="-2" pref="608" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -73,30 +77,38 @@
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Component id="labelNama" min="-2" pref="16" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="labelNIM" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="labelVisiMisi" min="-2" max="-2" attributes="0"/>
-                  </Group>
                   <Component id="labelPhoto" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Group type="102" attributes="0">
-                      <Component id="jButton1_Add" min="-2" pref="59" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton3_Edit" min="-2" pref="55" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jButton1_Add" min="-2" pref="59" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="labelNama" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                              <Component id="labelNIM" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jButton3_Edit" min="-2" pref="55" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                              <Component id="labelVisiMisi" min="-2" pref="43" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jButton5_Remove" min="-2" pref="55" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" pref="142" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="labelTimer" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="32767" attributes="0"/>
               <Component id="jButton2_Vote" min="-2" pref="56" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
@@ -206,17 +218,26 @@
     </Component>
     <Component class="javax.swing.JLabel" name="labelNama">
       <Properties>
-        <Property name="text" type="java.lang.String" value="-"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Agency FB" size="24" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Name"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="labelNIM">
       <Properties>
-        <Property name="text" type="java.lang.String" value="-"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Agency FB" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="NIM"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="labelVisiMisi">
       <Properties>
-        <Property name="text" type="java.lang.String" value="-"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Agency FB" size="24" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Visi Misi"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="labelTimer">
