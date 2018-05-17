@@ -20,7 +20,9 @@ public class Driver {
         login.setVisible(true);
         login.setLocationRelativeTo(null);
         login.setResizable(false);
-       
+        String encryptPass = (new Security().encrypt("satu dua tiga"));
+        System.out.println(encryptPass);
+        System.out.println(new Security().decrypt(encryptPass));
         // TODO code application logic here
     }
     

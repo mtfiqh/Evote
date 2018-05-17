@@ -46,7 +46,7 @@ public class ListArray {
             rs=st.executeQuery("SELECT * FROM loginvoter");
             DataLogin dataLogin;
             while(rs.next()){
-                dataLogin = new DataLogin(rs.getString("username"), rs.getString("password"));
+                dataLogin = new DataLogin(rs.getString("username"), new Security().decrypt(rs.getString("password")));
                 listArrayDataLogin.add(dataLogin);
             }
         }catch(SQLException e){

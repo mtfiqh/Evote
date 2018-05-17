@@ -7,6 +7,7 @@ package GUI;
 import Function.ListArray;
 import Function.DataVoter;
 import Function.DatabaseConnection;
+import Function.Security;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -374,6 +375,7 @@ public class Voter extends javax.swing.JFrame {
                 Random rnd = new Random();
                 long length=8;
                 password = new Random().ints(length, 0, chars.length()).mapToObj(i -> "" + chars.charAt(i)).collect(Collectors.joining());
+                password = new Security().encrypt(password);
                 Connection con=datacon.getConnection();
                 Statement st;
                 ResultSet rs;
@@ -399,6 +401,7 @@ public class Voter extends javax.swing.JFrame {
                 }catch(SQLException ex){
                     ex.printStackTrace();
                 }
+                password = new Security().decrypt(password);
                 JOptionPane.showMessageDialog(this, "Username: "+username+"\nPassword: "+password);
             }else{
                 JOptionPane.showMessageDialog(this, "User ini sudah vote!");
