@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.9
+-- version 4.8.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 10, 2018 at 12:33 PM
+-- Generation Time: May 18, 2018 at 01:51 PM
 -- Server version: 10.1.31-MariaDB
--- PHP Version: 7.2.3
+-- PHP Version: 7.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -40,8 +40,8 @@ CREATE TABLE `calon` (
 --
 
 INSERT INTO `calon` (`NIM`, `Nama`, `keterangan`, `dipilih`) VALUES
-('14116162', 'fiq', '', 0),
-('14117063', 'Reza Octaviany', 'NOTHING IS IMPOSSIBLE', 259);
+('14116162', 'fiq', 'apaaa gitu', 0),
+('14117063', 'Reza Octaviany', 'NOTHING IS IMPOSSIBLE', 260);
 
 -- --------------------------------------------------------
 
@@ -78,8 +78,8 @@ CREATE TABLE `loginvoter` (
 --
 
 INSERT INTO `loginvoter` (`username`, `password`) VALUES
-('11117043', '9zoga9Lc'),
-('14116016', 'JMCTVTUv');
+('11117039', 'vSGyFw:s'),
+('11117046', ';r}{nfNp');
 
 -- --------------------------------------------------------
 
@@ -102,10 +102,10 @@ CREATE TABLE `mahasiswa` (
 INSERT INTO `mahasiswa` (`NIM`, `Nama`, `kd_prodi`, `keterangan`, `vote_who`) VALUES
 ('11117019', 'Bravadi Ismail Malangjoed', 'Fisika', 0, NULL),
 ('11117022', 'Muhammad Bramansyah', 'Fisika', 1, '14117063'),
-('11117024', 'Nur Apipah', 'Fisika', 0, NULL),
-('11117030', 'Riska Indriyana', 'Fisika', 0, NULL),
+('11117024', 'Nur Apipah', 'Fisika', 1, NULL),
+('11117030', 'Riska Indriyana', 'Fisika', 1, NULL),
 ('11117039', 'DHEA ENDAH PURWATI', 'Fisika', 0, NULL),
-('11117043', 'SITI NIKMATUN KHOIRIYAH', 'Fisika', 0, NULL),
+('11117043', 'SITI NIKMATUN KHOIRIYAH', 'Fisika', 1, '14117063'),
 ('11117044', 'HERI DWI MARSANTI', 'Fisika', 1, NULL),
 ('11117045', 'RISKA DEWI ADELIA SAPUTRI', 'Fisika', 0, NULL),
 ('11117046', 'DEBI BAYU NANDA', 'Fisika', 0, NULL),
