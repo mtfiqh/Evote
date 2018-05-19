@@ -16,7 +16,7 @@ import org.omg.CORBA.Environment;
  *
  * @author mtauf
  */
-public class FileDataDatabase {
+public class FileDataDatabase extends abstrackSaveToTxt{
        String host,username,password;
        File file = new File("settingdata.txt");
 
@@ -24,6 +24,7 @@ public class FileDataDatabase {
         
     }
     
+    @Override
     public void SaveSettings(String host,String username,String password){
         //Change database setting
         try (PrintWriter writer = new PrintWriter(file)) {
