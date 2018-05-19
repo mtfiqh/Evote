@@ -1,3 +1,3 @@
-jdbc:mysql://localhost/e-vote_demo
+192.168.0.102/e-vote_demo
 root
 

@@ -31,7 +31,7 @@ public class DatabaseConnection {
     public Connection getConnection(){
         Connection con;
         try{
-            con=(Connection) DriverManager.getConnection(host, username, pass);
+            con=(Connection) DriverManager.getConnection("jdbc:mysql://"+host, username, pass);
             System.out.println("Connect!");
             return con;
         }catch(SQLException e){

@@ -83,7 +83,7 @@ public class HasilVote extends javax.swing.JFrame {
         int banyakV = listV.size();
         listV= new ListArray().getListDataVoter("SELECT * FROM mahasiswa where keterangan=0");
         int banyakNotVoteV = listV.size();
-        listV=new ListArray().getListDataVoter("SELECT * FROM mahasiswa where keterangan=1 and vote_who is not null");
+        listV=new ListArray().getListDataVoter("SELECT * FROM mahasiswa where keterangan=1");
         int banyakVoteV = listV.size();
         listV=new ListArray().getListDataVoter("SELECT * FROM mahasiswa where keterangan=1 and vote_who is null");
         int banyakGolputV=listV.size();

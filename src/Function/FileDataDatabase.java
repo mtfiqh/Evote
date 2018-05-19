@@ -50,7 +50,7 @@ public class FileDataDatabase extends abstrackSaveToTxt{
         catch(FileNotFoundException ex){
             System.out.println("file not found!");
             //jika tidak ada file, membuat file default
-            SaveSettings("jdbc:mysql://localhost:3306/e-vote_demo", "root", "");
+            SaveSettings("localhost:3306/e-vote_demo", "root", "");
             //lalu load setting lagi
             LoadSettings();
         }
