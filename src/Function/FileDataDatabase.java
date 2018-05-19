@@ -38,6 +38,7 @@ public class FileDataDatabase extends abstrackSaveToTxt{
         }
     }
     
+       @Override
     public void LoadSettings(){
         //load database setting
         try (Scanner scan = new Scanner(file)) {
